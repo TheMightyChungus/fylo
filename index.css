@@ -191,17 +191,10 @@
         flex-direction: column;
     }
 
-    #features .line{
-        width: 150px;
-        height: 1px;
-        background-color: green;
-        margin: 2px auto 0 auto;
-    }
-
     #features .container-text {
         padding: 3.75rem 1rem 1rem 1rem;
-        text-align: center;
-
+        text-align: left;
+        position: relative;
     }
 
     #features .container-text p{
@@ -209,15 +202,29 @@
     }
 
     #features .container-text a{
-        position: relative;
         display: block;
-        margin: 1rem auto 0rem auto;
+        color: green;
+        width: 100%;
         text-align: center;
         text-decoration: none;
+        margin-top: 2rem;
     }
 
-    #features .container-text a{
-        color: green;
+    #features .pseudo-line{
+        display: inline-block;
+        width: 0px;
+        margin: 0px;
+        padding-left: 0;
+     }
+        #features .pseudo-line:after{
+        content:"";
+        position: relative;
+        display: inline-block;
+        width: 145px;
+        height: 1px;
+        background-color: green;
+        top: 10px;
+        left: 5px;
     }
 
     #features .container-text a:after{
@@ -294,24 +301,29 @@
 
     #features .container-text{
         text-align: left;
+ 
     }
+
 
     #features .container-text p{
         width: 90%;
     }
 
     #features .container-text a{
-        position: relative;
-        left: -34%
+        text-align: left;
+        margin-bottom: 4rem;
     }
 
     #features .container-text a:after{
         top: 3px;
+        
     }
 
     #features .line{
-        position: relative;
-        left: -34%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
     }
 
     #features .container-img{
@@ -353,6 +365,7 @@
         flex-direction: column;
         background-color: #575989;;
         padding: 1rem 1.5rem 3.75rem 1rem;
+        color: white;
     }
 
     #access h1{
@@ -452,6 +465,13 @@
         padding: .8rem .2rem .8rem .2rem;
     }
 
+}
+
+@media only screen and (min-width: 1280px){
+        #access input{
+        padding: .5rem .25rem .5rem .5rem;
+        margin-left: -30px;
+    }
 }
 
 /*-- -------------------------- -->
