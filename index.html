@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="core-styles.css">
+
+
+  <link rel="preload" as="image" href="images/logo.svg">
+  <link rel="preload" as="image" hrf="images/illustration-1.svg">
+
+
+<body>
+
+  <header id="navigation">
+    <div class="container">
+      <a href= "/index.html" class="logo" aria-label = "back to home"> <img src="images/logo.svg"></a>
+
+      <!-- Navigation List -->
+      <nav class="nav" role="navigation">
+        <ul>
+          <li>Features</li>
+          <li>Team</li>
+          <li>Sign in </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================ -->
+  <!--                    Hero                      -->
+  <!-- ============================================ -->
+
+<section id="hero">
+
+  <div class="container-img">
+
+    <img decoding="async" src="images/illustration-1.svg" alt="folder and people"  aria-hidden="true">
+  </div>
+
+  <div class="container-text">
+    <h1 class="title">All your files in one secure location, accessible anywhere.</h1>
+  
+    <p>
+      Fylo stores your most important files in one secure location.   
+      Access them wherever you need, share and collaborate with friends,
+      family, and co-workers.
+    </p>
+
+    <div class="button-flex">
+      <form>
+        <input type="email" id="email"  name="email" placeholder="Enter your email."> 
+
+          <div class="invalid-email"> <p> Please check your email. </p></div>
+      </form>
+
+      <button>Get Started </button>
+    </div>
+
+  </div>
+
+  </section>
+
+
+  <!-- ============================================ -->
+  <!--                    Features                  -->
+  <!-- ============================================ -->
+
+  <section id="features">
+
+    <div class="container-img">
+
+      <img loading="lazy" decoding="async" src="images/illustration-2.svg" alt="people writing on boards"  aria-hidden="true"> 
+
+    </div>
+
+    <div class="container-text">
+
+      <h2 class="title">Stay productive, wherever you are</h2>
+
+      <p>Never let location be an issue when accessing your files. Fylo has you 
+      covered for all of your file storage needs.</p>
+
+      <p>Securely share files and folders with friends, family and colleagues for 
+      live collaboration. No email attachments required!</p>
+
+      <a href="/index.html"> See how Fylo works </a>
+      <div class="line"> </div>
+    
+      <div class="testimonial">
+        <img class="quote" loading="lazy" decoding="async" src="images/icon-quotes.svg" alt="quote"  aria-hidden="true">
+
+        <blockquote>Fylo has improved our team productivity by an order of magnitude. Since 
+        making the switch our team has become a well-oiled collaboration machine.</blockquote>
+
+        <div class="testimonial-flex-container">
+
+        <div class="testimonial-flex-img">
+          <img class="kyle" loading="lazy" decoding="async" src="images/avatar-testimonial.jpg" alt="Kyle"  aria-hidden="true">
+        </div>
+        
+        <div class="testimonial-flex-text">
+          <h2> Kyle Burton </h2> 
+          <small>Founder & CEO, Huddle</small>
+        </div>
+
+        </div> <!-- Testimonial Flex Container-->
+
+      </div> <!-- Testimonial -->
+
+    </div> <!-- Container Text -->
+
+  </section>
+
+  <!-- ============================================ -->
+  <!--                  Early Access                -->
+  <!-- ============================================ -->
+
+  <section id="access">
+    
+    <div class="container-text">
+
+      
+      <h1 class="title">Get early access today</h1>
+
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
+      If you have any questions, our support team would be happy to help you.</p>
+
+
+    </div>
+
+    <div class="button-flex">
+
+      <form>
+
+        <input type="email" id="email" name="email" placeholder="email@example.com"> 
+        <div class="invalid-email"> <p> Please check your email. </p></div>
+
+        <button>Get Started For Free</button>
+
+      </form>
+
+    </div> <!-- Button Flex -->
+
+  </section> 
+
+  <footer>
+    <div class="container-contact">
+      
+      <img class="footer-logo" src="images/logo.svg" loading="lazy" decoding="async"  alt="logo"  aria-hidden="true">
+    
+      <p class="phone">Phone: +1-543-123-4567</p>
+      <p class="email">example@fylo.com </p>
+
+    </div>
+
+    <div class="container-nav">
+      <nav>
+        <ul>
+          <li> About Us </li>
+          <li> Jobs </li>
+          <li> Press </li>
+          <li> Blog </li>
+          <li> Contact Us</li>
+          <li> Terms </li>
+          <li> Privacy </li>
+        </ul>
+      </nav>
+    </div>
+    <img loading="lazy" decoding="async" src="" alt=""  aria-hidden="true">
+      <div class="container-social">
+        <img loading="lazy" decoding="async" src="images/icon-fb-white.png" alt="twitter"  aria-hidden="true">
+        <img loading="lazy" decoding="async" src="images/icon-twitter.svg" alt="twitter"  aria-hidden="true">
+        <img loading="lazy" decoding="async" src="images/icon-instagram-white.png" alt="twitter"  aria-hidden="true">
+      </div>
+    </footer>
+</body>
+
+</html>

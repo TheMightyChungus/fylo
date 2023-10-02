@@ -1,0 +1,86 @@
+:root {
+
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+
+    
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4{
+    line-height: 1.2;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+margin: 0;
+font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+ol{
+list-style: none;
+padding: 0;
+}
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+.spacing > * + * {
+    margin-top: 1rem;
+}
+
+.title{
+    line-height: 1.2em;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+}
+
+.text {
+    line-height: 1.5em;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+  }
+
+  .button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+
